@@ -40,6 +40,5 @@ function changeEventHandler(event) {
     tr.appendChild(td1);
     tr.appendChild(td2);
     let list = document.getElementById('TableBody');
-    list.insertBefore(tr, list.childNodes[0]);
-    
+    list.insertBefore(tr, list.childNodes[0]);    
 }
