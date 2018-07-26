@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sistema de Orçamento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="_css/main.css" />
+    <style>
+        table  { border-collapse: collapse; }
+        td, th { border: 1px solid black; padding: 3px 8px; }
+        th     { text-align: left; }
+    </style>
+</head>
+
+<body>
+    <div id ="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1 style="text-align: center">Sistema de Orçamento</h1>
+                
+            </hgroup>
+        </header>
+
+        <section id="orcamento">
+            <h2 style="text-align: left">Selecione abaixo as especificações do seu orçamento:</h2>
+            <select id="lista">
+            <option value="" selected="selected">Escolha um serviço</option>
+            <option value="45">Limpeza interna</option>
+            <option value="40">Formatação</option>
+            <option value="65">Formatação + Limpeza interna</option>
+            <option value="85">Troca de tela</option>
+            <option value="100">Troca de placa mãe</option>
+            <option value="50">Troca de HD/Memória</option>
+        </select>
+
+        <p>*Valor não inclui peças. Apenas mão de obra.</p>
+        <table id="tabela-orcamento">
+            <thead>
+                <th>servico</th>
+                <th>preco</th>
+            </thead>
+            <tbody>
+                <tr id="LinhaTotal">
+                    <td>Total: </td>
+                    <td id="Total">R$ 0</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="_javascript/main.js"></script>
+        </section>
+    </div>    
+</body>
+</html>

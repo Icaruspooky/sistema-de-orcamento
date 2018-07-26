@@ -1,0 +1,12 @@
+body{
+	background-color: #c2bebe;
+	color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+	width: 1000px;
+	background-color: rgb(167, 178, 207);
+	margin: -20px auto 0px auto;
+	box-shadow: 0px 0px 10px gray;
+	padding: 10px;
+}
