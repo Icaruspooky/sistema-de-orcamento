@@ -1,28 +1,18 @@
-  function buildHeader(servicos){
-    let tHead = document.createElement('thead')
-    let anyServico = servicos [0]
-    let nomesServicos = Object.keys(anyServico)
-
-    for (nomeServico of nomesServicos){
-      let th = document.createElement('th')
-      th.innerText = nomeServico
-      tHead.appendChild(th);
-    }
-
-    return tHead;
-  }
-
+//variável global que representa o valor total da tabela.
   let total = 0;
 
+//Função que atualiza o valor total da tabela.
   function updateTotal(value){
     let int = parseInt(value, 10)
     total += int;
   }
 
-document.addEventListener('DOMContentLoaded',function() {
+//Cria um evento ao mudar o valor na caixa de seleção.
+  document.addEventListener('DOMContentLoaded',function() {
     document.querySelector('#lista').onchange=changeEventHandler;
 },false);
 
+//Função para receber o valor selecionado, realizar a soma e gerar a nova linha na tabela.
 function changeEventHandler(event) {
 
     console.log(this)

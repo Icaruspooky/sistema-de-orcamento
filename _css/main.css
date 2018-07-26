@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body{
 	background-color: #c2bebe;
 	color: rgba(0, 0, 0, 1);
@@ -5,8 +8,105 @@ body{
 
 div#interface {
 	width: 1000px;
-	background-color: rgb(167, 178, 207);
-	margin: -20px auto 0px auto;
+	background-color: rgb(232, 235, 243);
+	margin: -25px auto 0px auto;
 	box-shadow: 0px 0px 10px gray;
 	padding: 10px;
+	font-family: 'Roboto', sans-serif;
 }
+
+table#tabela-orcamento{
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabela-orcamento td{
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table#tabela-orcamento td.cd{
+	background-color: #cecece;
+}
+
+table#tabela-orcamento caption{
+	color: #000000;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+
+p#tablecap{
+	color: #616060;
+	font-size: 9pt;
+	text-align: center;
+	vertical-align: middle
+}
+
+.center-on-page {
+	position: relative;
+	top: 70%;
+	left:88%;
+	transform: translate(-50%,-50%);
+  }
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0 !important;
+	background: #2c3e50;
+	background-image: none;
+  }
+  /* Custom Select */
+  .select {
+	position: relative;
+	display: block;
+	width: 15em;
+	height: 2em;
+	line-height: 2;
+	background: #2c3e50;
+	overflow: hidden;
+	border-radius: .25em;
+  }
+  select {
+	vertical-align: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0 0 0 .5em;
+	color: #fff;
+	cursor: pointer;
+  }
+  select::-ms-expand {
+	display: none;
+  }
+  /* Arrow */
+  .select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0 1em;
+	background: #34495e;
+	pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+	color: #6984cf;
+  }
+  .select::after {
+	-webkit-transition: .25s all ease;
+	-o-transition: .25s all ease;
+	transition: .25s all ease;
+  }
+
+

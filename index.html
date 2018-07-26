@@ -8,50 +8,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="_css/main.css" />
     <style>
-        table  { border-collapse: collapse; }
-        td, th { border: 1px solid black; padding: 3px 8px; }
-        th     { text-align: left; }
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 3px 8px;
+        }
+        th {
+            text-align: left;
+        }
     </style>
 </head>
 
 <body>
-    <div id ="interface">
+    <div id="interface">
         <header id="cabecalho">
             <hgroup>
+                <img id="capa" src="_imagens/Capa-Facebook.png" />
                 <h1 style="text-align: center">Sistema de Orçamento</h1>
-                
             </hgroup>
         </header>
 
         <section id="orcamento">
-            <h2 style="text-align: left">Selecione abaixo as especificações do seu orçamento:</h2>
-            <select id="lista">
-            <option value="" selected="selected">Escolha um serviço</option>
-            <option value="45">Limpeza interna</option>
-            <option value="40">Formatação</option>
-            <option value="65">Formatação + Limpeza interna</option>
-            <option value="85">Troca de tela</option>
-            <option value="100">Troca de placa mãe</option>
-            <option value="50">Troca de HD/Memória</option>
-        </select>
+            <h2 style="text-align: left">Selecione abaixo as especificações do seu orçamento:</br></br></h2>
+            <div class="center-on-page">
+            <div class="select">
+                <select id="lista">
+                    <option value="" selected="selected">Escolha um serviço</option>
+                    <option value="45">Limpeza interna</option>
+                    <option value="40">Formatação</option>
+                    <option value="65">Formatação + Limpeza interna</option>
+                    <option value="85">Troca de tela</option>
+                    <option value="100">Troca de placa mãe</option>
+                    <option value="50">Troca de HD/Memória</option>
+                </select>
+            </div>
+            </div>
 
-        <p>*Valor não inclui peças. Apenas mão de obra.</p>
-        <table id="tabela-orcamento">
-            <thead>
-                <th>servico</th>
-                <th>preco</th>
-            </thead>
-            <tbody id=TableBody>
-                <tr>
-                    <td>Total: </td>
-                    <td id=TotalValue>R$ 0</td>
-                </tr>
-            </tbody>
-        </table>
-        <script src="_javascript/main.js"></script>
+            <table id="tabela-orcamento">
+                <caption>Tabela de orçamento</caption>
+                <thead>
+                    <th>Serviço</th>
+                    <th>Preço</th>
+                </thead>
+                <tbody id=TableBody>
+                    <tr>
+                        <td>Total: </td>
+                        <td id=TotalValue>R$ 0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="tablecap">*Valor não inclui peças. Apenas mão de obra.</p>
+            <script src="_javascript/main.js"></script>
+
         </section>
-
-        <a id="refreshBtn" href="javascript:location.reload(true)">Refazer orçamento</a>
-    </div>    
+        <button class="refreshBtn blue round" onclick="window.location.href='javascript:location.reload(true)'">Refazer orçamento</button>
+    </div>
 </body>
+
 </html>
