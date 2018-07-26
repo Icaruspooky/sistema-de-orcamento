@@ -84,12 +84,14 @@ select {
 	padding: 0 0 0 .5em;
 	color: #fff;
 	cursor: pointer;
+	box-shadow: 0 2px 15px  #6984cf;
   }
   select::-ms-expand {
 	display: none;
   }
   /* Arrow */
   .select::after {
+	font-family: 'Roboto', sans-serif;
 	content: '\25BC';
 	position: absolute;
 	top: 0;
@@ -107,6 +109,40 @@ select {
 	-webkit-transition: .25s all ease;
 	-o-transition: .25s all ease;
 	transition: .25s all ease;
+  }
+
+  .refreshBtn{
+	  position: relative;
+	  left: 40%;
+	  font-family: 'Roboto', sans-serif;
+	  display: inline-block;
+	  font-size: 1em;
+	  padding: 1em 2em;
+	  margin-top: 40px;
+	  margin-bottom: 40px;
+	  -webkit-appearance: none;
+	  appearance: none;
+	  background-color: #2c3e50;
+	  color: white;
+	  pointer-events: visibleFill;
+	  border-radius: 6px;
+	  cursor: pointer;
+	  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+	  box-shadow: 0 2px 15px  #6984cf;
+  }
+
+  .refreshBtn::after {
+	font-family: 'Roboto', sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0 1em;
+	background: #34495e;
+	pointer-events: none;
+  }
+
+  .refreshBtn:hover::after {
+	color: #6984cf;
   }
 
 
