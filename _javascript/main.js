@@ -79,5 +79,6 @@ function changeEventHandler(event) {
 
     tr.appendChild(td1);
     tr.appendChild(td2);
-    document.querySelector("#tabela-orcamento").insertBefore(tr, getElementById("LinhaTotal"));
+    let list = document.getElementById('TableBody');
+    list.insertBefore(tr, list.childNodes[0]);
 }
